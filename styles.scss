@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.image{
+    height: 100vh;
+    width: 40vw;
+    background-image: url(luke-stackpoole-5Qqkjn4PFPA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    // width: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: relative;
+    top: 15.9vh;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImg{
+    width: 125px;
+    height: 125px;
+    position: relative;
+    right: 75px;
+}
+
+.logoText{
+    color: rgb(173, 210, 196);
+    position: relative;
+    right: 50px;
+    font-size: 60px;
+}
+
+.right{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(26, 34, 37);
+}
+
+.alignLeft{
+    padding-left: 3vw;
+}
+
+.rightText{
+    width: 90%;
+    position: relative;
+    bottom: 5vh;
+    font-size: 30px;
+    color: rgb(173, 210, 196);
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 3vw;
+    background-color: rgb(95, 173, 153);
+}
+
+.formTitle{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+label,
+input{
+    align-self: flex-start;
+}
+
+label{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+input{
+    margin-bottom: 10px;
+    width: 60%;
+    background-color: rgb(26, 34, 37);
+    color: rgb(173, 210, 196);
+    font-size: 18px;
+    padding: 5px 5px;
+    border: 1px solid rgb(26, 34, 37);
+}
+
+input:focus{
+    border: 1px solid white;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid{
+    border: 1px solid red;
+}
+
+button{
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    color: rgb(173, 210, 196);
+    background-color: rgb(26, 34, 37);
+    border: 2px solid rgb(173, 210, 196);
+}
+
+button:hover{
+    background-color: rgb(173, 210, 196);
+    color: rgb(26, 34, 37);
+    border: 2px solid rgb(26, 34, 37);
+    cursor: pointer;
+}
+
+.login{
+    margin-top: 20px;
+    color: rgb(173, 210, 196);
+}
